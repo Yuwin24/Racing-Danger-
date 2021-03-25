@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <style>
+    body {
+      background-image: url("racing.gif");
+      background-position: center;
+      background-size: cover;
+    }
+
+    #myCanvas {
+      margin-top: 30px;
+      border-width: 10px;
+      background-color: white;
+      border-style: ridge;
+    }
+
+    h1,
+    h4 {
+      color: white !important;
+    }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <title>Racing Danger !!</title>
+</head>
+
+<body onload="add();">
+
+  <center>
+    <h1>Racing Danger</h1>
+    <canvas id="myCanvas" width="820" height="500">
+    </canvas>
+    <h4>
+      <b class="text-danger">NOTE : </b> IF CARS ARE NOT VISIABLE PRESS ANY ARROW KEY
+    </h4>
+   
+    <h1>Game Status : <span id="game_status"></span></h1>
+	
+</center>
+<script src="main.js">
+</script>
+
+   
+    <button onclick="myFunction()">CONTROLS</button>
+
+    <script>
+      function myFunction() {
+        alert("Purple car:  UP W , LEFT A , DOWN S , RIGHT D . Blue car:  UP U , LEFT H , DOWN J , RIGHT K ");
+      }
+    </script>
+  </center>
+  <script src="main.js">
+  </script>
+  <script async src="https://drv.tw/inc/wd.js"></script>
+</body>
+
+
+</html>
